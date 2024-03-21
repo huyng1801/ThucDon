@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LenKeHoach</class>
+ <widget class="QWidget" name="LenKeHoach">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>867</width>
+    <height>722</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#LenKeHoach{
+background: rgb(139, 233, 253);
+}
+QCheckBox {
+    spacing: 5px;
+	font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+QRadioButton {
+    spacing: 5px;
+	font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+}
+QGroupBox {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+    border: 2px solid gray;
+    border-radius: 5px;
+	font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+    margin-top: 1ex; /* leave space at the top for the title */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* position at the top center */
+    padding: 0 3px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF0ECE, stop: 1 #FFFFFF);
+}
+QTextEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: yellow;
+    selection-background-color: darkgray;
+	font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QPushButton {
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+}
+QPushButton:pressed {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>861</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt; font-weight:600;&quot;&gt;LÊN KẾ HOẠCH&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>160</y>
+     <width>431</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Đạm</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>390</width>
+      <height>125</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="checkBoxThitBo">
+       <property name="text">
+        <string>Thịt bò</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="checkBoxHaiSanTomMuc">
+       <property name="text">
+        <string>Hải sản (Tôm, mực,…)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QCheckBox" name="checkBoxCa">
+       <property name="text">
+        <string>Cá</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="checkBoxTrung">
+       <property name="text">
+        <string>Trứng</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QCheckBox" name="checkBoxThitGaVit">
+       <property name="text">
+        <string>Thịt gà, vịt</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="checkBoxThitHeo">
+       <property name="text">
+        <string>Thịt heo</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QCheckBox" name="checkBoxDamThucVatTauHuSuonChay">
+       <property name="text">
+        <string>Đạm thực vật (Tàu hủ, sườn chay,…)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>160</y>
+     <width>301</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Tinh bột</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>281</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="checkBoxBunHuTieuMien">
+       <property name="text">
+        <string>Bún, hủ tiếu, miến,…</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QCheckBox" name="checkBoxBanhMi">
+       <property name="text">
+        <string>Bánh mì</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="checkBoxComXoi">
+       <property name="text">
+        <string>Cơm, xôi</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QCheckBox" name="checkBoxMi">
+       <property name="text">
+        <string>Mì</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="checkBoxChao">
+       <property name="text">
+        <string>Cháo</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="checkBoxNui">
+       <property name="text">
+        <string>Nui</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QCheckBox" name="checkBoxBanhPho">
+       <property name="text">
+        <string>Bánh phở</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>350</y>
+     <width>431</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Chất xơ</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>38</y>
+      <width>391</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="checkBoxDuaLeoCaChua">
+       <property name="text">
+        <string>Dưa leo, cà chua</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QCheckBox" name="checkBoxCaRotKhoaiTay">
+       <property name="text">
+        <string>Cà rốt, khoai tây</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QCheckBox" name="checkBoxRauCai">
+       <property name="text">
+        <string>Rau, cải</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QCheckBox" name="checkBoxDau">
+       <property name="text">
+        <string>Đậu</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="checkBoxBi">
+       <property name="text">
+        <string>Bí</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="checkBoxHanhTay">
+       <property name="text">
+        <string>Hành tây</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QCheckBox" name="checkBoxNam">
+       <property name="text">
+        <string>Nấm</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QCheckBox" name="checkBoxKhomDuaThom">
+       <property name="text">
+        <string>Khóm - Dứa - Thơm</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>350</y>
+     <width>301</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Thời gian chế biến</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>39</x>
+      <y>39</y>
+      <width>231</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <widget class="QRadioButton" name="radioNhoHon15p">
+       <property name="text">
+        <string>&lt;15p</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QRadioButton" name="radioNhoHon45p">
+       <property name="text">
+        <string>&lt;45p</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QRadioButton" name="radioNhoHon30p">
+       <property name="text">
+        <string>&lt;30p</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QRadioButton" name="radioLonHon45p">
+       <property name="text">
+        <string>&gt;45p</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnLenKeHoach">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>540</y>
+     <width>186</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lên kế hoạch</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnNext">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>540</y>
+     <width>186</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtThucDon">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>590</y>
+     <width>771</width>
+     <height>87</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

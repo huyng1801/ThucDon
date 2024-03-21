@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>Images/thongtinnguoidung.png</file>
+    <file>Images/chucnang.png</file>
+    <file>Images/main.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form{
+background: rgb(139, 233, 253);
+}
+QTableWidget{
+border: none;
+background-color: rgba(255, 255, 255, 0);
+}
+QTableWidget::item{
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+border-bottom: 1px solid rgb(68, 71, 90);
+border-left: 1px solid rgb(68, 71, 90);
+color: rgb(40, 42, 48);
+padding-left: 5px;
+}
+QTableWidget QHeaderView::section{
+background-color: rgb(68, 71, 90);
+border: none;
+color: rgb(248, 248, 242);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
+padding: 5px;
+}
+QTableWidget::item:selected {
+background: rgba(40, 42, 54, 50);
+}
+QScrollBar:vertical {
+border: 2px solid rgb(68, 71, 90);
+background: rgb(98, 114, 164);
+width: 10px;
+margin: 42px 0 42px 0;
+}
+QScrollBar::handle:vertical {
+background: white;
+min-height: 20px;
+border-radius: 3px;
+}
+QScrollBar::add-line:vertical {
+border: 2px solid rgb(68, 71, 90);
+background: rgb(98, 114, 164);
+height: 40px;
+subcontrol-position: bottom;
+subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+border: 2px solid rgb(68, 71, 90);
+background: rgb(98, 114, 164);
+height: 40px;
+subcontrol-position: top;
+subcontrol-origin: margin;
+}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+background: none;
+}
+
+QPushButton {
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+}
+QPushButton:pressed {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>730</y>
+     <width>186</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>70</y>
+     <width>1101</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>200</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>STT</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tên</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Đạm</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tinh bột</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Chất xơ</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Thời gian chế biến</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Calories</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Link</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
